@@ -1,0 +1,44 @@
+'''
+C:\python_training\day3\data>python
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from ormdata import Person,Base,Address
+BOA db tables created
+>>> from sqlalchemy import create_engine
+>>> engine=create_engine('sqlite:///boa.db')
+>>> Base.metadata.bine=engine
+>>> from sqlalchemy.org import sessionmaker
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'sqlalchemy.org'
+>>> from sqlalchemy.orm import sessionmaker
+>>> Base.metadata.bind=engine
+>>> DBSession=sessionmaker()
+>>> DBSession.bind=engine
+>>> session=DBSession(0
+...
+KeyboardInterrupt
+>>> session=DBSession()
+>>> session.query(Person).all()
+[<ormdata.Person object at 0x0000019D37090850>]
+>>> session.query(Person).first()
+<ormdata.Person object at 0x0000019D37090850>
+>>> person=session.query(Person).first()
+>>> person.name()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object is not callable
+>>> person.name
+'Murthy'
+>>> address=session.query(Address).filter(Address.person==person).one()
+>>> address.city
+'Hyderabad'
+>>> address.postcode
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'Address' object has no attribute 'postcode'
+>>> address.post_code
+'500013'
+>>>
+
+'''
