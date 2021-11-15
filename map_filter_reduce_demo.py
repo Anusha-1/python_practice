@@ -1,13 +1,10 @@
-#what is flask application 
-#fast apis?
-#
-
-#this is useful for ml, data ,business
 
 """
 map,filter,reduce are paradigms of FUNCTIONAL programming
 they allow u to write ----> simpler , shorter code w/o bother about intricacies like loops and branching
 this is same as javascript
+
+this is useful for ml, data analytics ,business analytics
 
 map(func,*iterables) iterable --iterable: list , set or collection  which can be interated , not on dict it will work
 
