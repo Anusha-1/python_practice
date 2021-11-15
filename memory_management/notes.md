@@ -1,5 +1,6 @@
-c , c++ automatic memory management is not there
-stack memory and heat memory
+c , c++ automatic memory management is not there unlike python
+
+stack memory and heap memory
 
 static methods, global variables : stack
 objects(classes) : heap
