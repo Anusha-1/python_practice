@@ -1,5 +1,5 @@
 import gc 
-#pip install emory_profiler
+#pip install memory_profiler
 
 @profile
 def myfunc():
