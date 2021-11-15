@@ -20,8 +20,8 @@ db = client.pythondb
 print("Database created -  pythondb")
 
 employee = {"id": "101",
-            "name": "Murthy",
-            "profession": "Software Architect",
+            "name": "Anusha",
+            "profession": "Software Engineer",
             }
 
 # Creating document
