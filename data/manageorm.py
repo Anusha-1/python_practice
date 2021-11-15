@@ -14,5 +14,5 @@ session.commit()
 
 new_address=Address(city='Hyderabad',post_code='500013',person=new_person)
 session.add(new_address)
-session.commit() # we need not do insert into , or select * , this io more professional
+session.commit() # we need not do insert into , or select * , this is more professional
 print("data inserted in tables")
