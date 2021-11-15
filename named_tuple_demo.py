@@ -3,7 +3,8 @@ from pympler import asizeof
 # tuple : collection of items in a sequence 
 # tup =(1,'ANUSHA',23) 
 # tup[0] :1
-#dictionary consumes more space , tuple is lighter weight. I Want to acces the tuple like dictionary but not with much of a space
+#dictionary consumes more space , tuple is lighter weight. 
+# Access tuple like dictionary but not with much of a space : use named tuple
 #pip install pympler --- one of the memory profiling tool
 
 Point = namedtuple("Point","x y z ")
