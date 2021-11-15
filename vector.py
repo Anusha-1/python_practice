@@ -5,7 +5,7 @@ if __name__=='__main__':
     a=np.arange(100000)
     b=np.arange(100000)
 
-#pure python outer product impl
+#pure python product impl
 tic=time.process_time()
 dot_product=0
 for i in range(len(a)):
@@ -24,3 +24,5 @@ dot_product=np.dot(a,b)
 n_toc= time.process_time()
 print("with numpy python dot product = "+ str(dot_product))
 print("with numpy time_taken =" +str( (n_toc-n_tic)*1000)+"ms\n")
+
+#can see how fast is numpy compared to normal python product for large volume of data
